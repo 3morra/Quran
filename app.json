@@ -1,39 +1,39 @@
 {
     "name": "Quran Radio",
-    "description": "بوت القرآن الكريم في قناتك",
+    "description": "Quran Userbot",
     "logo": "https://telegra.ph/file/4000307d8e62ddc23ffc4.jpg",
     "keywords": [
         "py-tgcalls",
         "pyrogram"
     ],
-    "website": "https://t.me/DevZaid",
-    "repository": "https://github.com/x72x/quran",
-    "success_url": "https://t.me/Y88F8",
+    "website": "https://t.me/Omarrtech",
+    "repository": "https://github.com/3morra/Quran",
+    "success_url": "https://t.me/Dev3mora",
     "env": {
         "API_ID": {
-            "description": "قم بوضع الايبي ايدي هنا",
+            "description": "Your Api-Id",
             "required": true,
             "value": ""
         },
         "API_HASH": {
-            "description": "قم بوضع الايبي هاش",
+            "description": "Your Api-Hash",
             "required": true,
             "value": ""
         },
         "SESSION": {
-            "description": "قم بوضع كود الجلسة بايروجرام 2.0",
+            "description": "Your Pyrogram 2.0 Session ",
             "required": true,
             "value": ""
         },
         "CHAT_ID": {
-            "description": "قم بوضع ايدي قناتك",
+            "description": "Chat Id",
             "required": true,
-            "value": "-100123456789"
+            "value": "-1001853885166"
         },
         "LINK": {
-            "description": "قم بوضع رابط مقطع من يوتيوب",
+            "description": "Youtube Link Video",
             "required": true,
-            "value": "https://youtu.be/M6z0Qql4-qo"
+            "value": "https://youtu.be/Spyc-izypAQ"
         }
     },
     "addons": [],
