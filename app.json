@@ -31,7 +31,7 @@
             "value": "-100123456789"
         },
         "LINK": {
-            "description": "قم بوضع رايط مقطع من يوتيوب",
+            "description": "قم بوضع رابط مقطع من يوتيوب",
             "required": true,
             "value": "https://youtu.be/M6z0Qql4-qo"
         }
