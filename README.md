@@ -1,4 +1,4 @@
-# By Dev Zaid @DevZaid
+# By Dev Zaid & 3mora
 
 
 
