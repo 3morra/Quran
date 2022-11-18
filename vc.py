@@ -1,4 +1,4 @@
-import asyncio
+import asyncio, os
 
 from pyrogram import Client, filters, enums
 
@@ -72,8 +72,8 @@ async def main():
     dl = yt.streams.get_audio_only().download(output_path='/cache')
     for a in range(1000000000000000):
        await call_py.join_group_call(CHAT_ID,AudioPiped(dl,),stream_type=StreamType().pulse_stream,)
+       print("Done ✅")
        await asyncio.sleep(yt.length+5)
-    print("Done ✅")
     await idle()
     await app.stop()
 
