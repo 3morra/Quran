@@ -1,6 +1,6 @@
 import asyncio, os
 
-from pyrogram import Client, filters, enums
+from pyrogram import Client
 
 from pytgcalls import PyTgCalls 
 
@@ -45,24 +45,6 @@ app = Client(
 )
 
 call_py = PyTgCalls(app)
-    
-
-@app.on_message(filters.command("play"))
-async def play(client, message):
-    await message.delete()
-    if len(message.text.split()) < 2:
-     return 
-    try:
-      yt = YouTube(message.text.split()[1])
-    except:
-      return await message.reply("رابط المقطع غير صحيح")
-    await message.reply("Downloading ...")
-    dl = yt.streams.get_audio_only().download(output_path='/cache')
-    await call_py.join_group_call(                    chat_id,                    AudioPiped(                        dl,                    ),                    stream_type=StreamType().pulse_stream,                )
-    await message.reply("Done")
-    await app.read_chat_history(message.chat.id)
-
-
 
 async def main():
     await app.start()
